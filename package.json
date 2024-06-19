@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "evershop test",
     "setup": "evershop install",
     "build": "evershop build",
-    "start": "evershop start"
+    "start": "evershop start",
+    "test": "evershop test"
   },
   "author": "",
   "license": "ISC",
