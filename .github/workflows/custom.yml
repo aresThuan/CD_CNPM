@@ -28,6 +28,7 @@ jobs:
     - run: npm install
     - run: npm run setup
     - run: npm run build
+    - run: npm run start
     
     # - name: Deploy to GitHub Pages
     #   uses: peaceiris/actions-gh-pages@v3
@@ -35,11 +36,11 @@ jobs:
     #     github_token: ${{ secrets.GITHUB_TOKEN }}
     #     publish_dir: ./build
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: main # Branch to deploy to, often 'gh-pages'
-        FOLDER: .evershop/build # Folder to deploy, relative to the root of the repository
+    # - name: Deploy to GitHub Pages
+    #   uses: JamesIves/github-pages-deploy-action@3.7.1
+    #   with:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     BRANCH: main # Branch to deploy to, often 'gh-pages'
+    #     FOLDER: ./build # Folder to deploy, relative to the root of the repository
         
     # - run: npm run test
